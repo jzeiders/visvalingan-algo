@@ -1,0 +1,16 @@
+{
+  "name": "visvalingam-algo",
+  "version": "0.1.0",
+  "description": "Simplifies lines by removing those that have the smallest net effect on the area",
+  "main": "Visvalingam.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gps",
+    "line",
+    "simplification"
+  ],
+  "author": "Jack Zeiders",
+  "license": "MIT"
+}
