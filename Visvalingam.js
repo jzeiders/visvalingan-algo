@@ -1,4 +1,4 @@
-
+var exports = module.exports = {}
 
 calculateTriangles = function(data){
   var triangles = [];
@@ -8,7 +8,7 @@ calculateTriangles = function(data){
   }
   return triangles;
 };
-reduceTriangles = function(points, precentRemoved){
+exports.simplify = function(points, precentRemoved){
   triangles = calculateTriangles(points);
   desiredLength = Math.Ceiling(triangle * (1-precent));
   while(triangles.length > desiredLength){
