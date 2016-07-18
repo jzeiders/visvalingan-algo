@@ -15,6 +15,7 @@ Visvalingam.prototype.simplify = function(points, precentRemoved){
   points = points.slice();
   var triangles = this.calculateTriangles(points),
   desiredLength = Math.ceil(points.length * (1-precentRemoved));
+  triangles.pop();
   while(points.length > desiredLength){
     var smallest = triangles.indexOf(Math.min(...triangles));
     triangles.splice(smallest,1);
@@ -32,7 +33,7 @@ Visvalingam.prototype.dist = function(pt1, pt2){
     return this.getDistance(pt1.y,pt1.x,pt2.y, pt2.x);
   }
   if(pt1.hasOwnProperty('lat')){
-    return this.getDistance(pt1.lat,pt2.lon,pt2.lat,pt2.lon);
+    return this.getDistance(pt1.lat,pt1.lng,pt2.lat,pt2.lng);
   }
   if(pt1.hasOwnProperty('latitude')){
     return this.getDistance(pt1.latitude, pt1.longitude, pt2.latitude, pt2.longitude);
@@ -55,4 +56,5 @@ Visvalingam.prototype.getDistance = function(lat1, lon1, lat2, lon2) {
 var deg2rad = function deg2rad(deg) {
     return deg * (Math.PI / 180);
 };
+
 module.exports = Visvalingam;
