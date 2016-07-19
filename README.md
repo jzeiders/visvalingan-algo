@@ -1,3 +1,4 @@
+<img src = "https://travis-ci.org/jzeiders/visvalingan-algo.svg?branch=master">
 # Visvalingan-algo
 Line-Simplification Algorithm
 
