@@ -1,4 +1,4 @@
-<img src = "https://travis-ci.org/jzeiders/visvalingan-algo.svg?branch=master">
+<img src = "https://travis-ci.org/jzeiders/visvalingan-algo.svg?branch=master"> [![Coverage Status](https://coveralls.io/repos/github/jzeiders/visvalingan-algo/badge.svg?branch=master)](https://coveralls.io/github/jzeiders/visvalingan-algo?branch=master)
 # Visvalingan-algo
 Line-Simplification Algorithm
 
