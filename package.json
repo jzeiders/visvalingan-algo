@@ -8,8 +8,7 @@
     "build": "babel source --out-dir dist",
     "prepublish": "npm run build",
     "coverage": "istanbul cover _mocha -- -R spec tests.js",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
-
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "keywords": [
     "GPS",
@@ -23,6 +22,7 @@
     "babel-register": "^6.9.0",
     "chai": "^3.5.0",
     "coveralls": "^2.11.11",
-    "istanbul": "^0.4.4"
+    "istanbul": "^0.4.4",
+    "mocha-lcov-reporter": "^1.2.0"
   }
 }
