@@ -4,7 +4,7 @@
   "description": "Simplifies lines by removing those that have the smallest net effect on the area",
   "main": "./dist/Visvalingam.js",
   "scripts": {
-    "test": "mocha tests -watch --recursion --compilers js:babel-register",
+    "test": "mocha tests --recursion --compilers js:babel-register",
     "build": "babel source --out-dir dist",
     "prepublish": "npm run build"
   },
