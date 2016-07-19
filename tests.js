@@ -2,18 +2,12 @@
 
 var chai = require("chai");
 var expect = chai.expect;
-var visAlgo = require('./source/Visvalingam.js');
+var visAlgo = require('./dist/Visvalingam.js');
 visAlgo = new visAlgo();
 var points = [],
 RANGE = 0.001
 beforeEach(function() {
-    // points = []
-    // for (var i = 0; i < 16; i++) {
-    //     points.push({
-    //         x: Math.random() * RANGE - RANGE/2,
-    //         y: Math.random() * RANGE - RANGE/2
-    //     })
-    // }
+
     points = [ { lng: -88.1945318, lat: 40.1111059 },
   { lng: -88.1946355, lat: 40.1101751 },
   { lng: -88.1946133, lat: 40.1099565 },
